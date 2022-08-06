@@ -1,0 +1,45 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.openweathermap.org/data/2.5/weather?appid=10dc748b229caedec1848cecf839852b&lat=39.7392&lon=104.9903&units=imperial
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.4.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - openresty
+      Date:
+      - Sat, 06 Aug 2022 19:46:01 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '502'
+      Connection:
+      - keep-alive
+      X-Cache-Key:
+      - "/data/2.5/weather?lat=39.74&lon=104.99&units=imperial"
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Access-Control-Allow-Methods:
+      - GET, POST
+    body:
+      encoding: UTF-8
+      string: '{"coord":{"lon":104.9903,"lat":39.7392},"weather":[{"id":804,"main":"Clouds","description":"overcast
+        clouds","icon":"04n"}],"base":"stations","main":{"temp":77.61,"feels_like":77.09,"temp_min":77.61,"temp_max":77.61,"pressure":1002,"humidity":43,"sea_level":1002,"grnd_level":858},"visibility":10000,"wind":{"speed":8.05,"deg":8,"gust":12.73},"clouds":{"all":98},"dt":1659815161,"sys":{"country":"CN","sunrise":1659823448,"sunset":1659874058},"timezone":28800,"id":1816821,"name":"Bayan
+        Hot","cod":200}'
+  recorded_at: Sat, 06 Aug 2022 19:46:01 GMT
+recorded_with: VCR 6.1.0
