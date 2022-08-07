@@ -5,6 +5,7 @@ class WeatherService
       f.params['lat'] = lat
       f.params['lon'] = long
       f.params['units'] = 'imperial'
+      f.params['exclude'] = 'minutely'
     end
     BaseService.get_json(response)
   end

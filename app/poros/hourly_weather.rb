@@ -5,9 +5,9 @@ class HourlyWeather
               :icon
 
   def initialize(data)
-    @time = Time.at(data[:hourly][:dt]).to_datetime
-    @temperature = data[:hourly][:temp]
-    @conditions = data[:hourly][:weather][:description]
-    @icon = data[:hourly][:hourly][:icon]
+    @time = Time.at(data[:dt]).to_datetime
+    @temperature = data[:temp]
+    @conditions = data[:weather][0][:description]
+    @icon = data[:weather][0][:icon]
   end
 end

@@ -7,15 +7,15 @@ class WeatherSerializer
         "type": "forecast",
         "attributes": {
           "current_weather": {
-            "datetime": weather.current_forcast.date_time,
-            "sunrise": weather.current_forcast.sunrise,
-            "sunset": weather.current_forcast.sunset,
-            "temperature": weather.current_forcast.temperature,
-            "feels like": weather.current_forcast.feels_like,
-            "humidity": weather.current_forcast.humidity,
-            "uvi": weather.current_forcast.uvi,
-            "conditions": weather.current_forcast.conditions,
-            "icon": weather.current_forcast.icon
+            "datetime": weather.current_forecast.date_time,
+            "sunrise": weather.current_forecast.sunrise,
+            "sunset": weather.current_forecast.sunset,
+            "temperature": weather.current_forecast.temperature,
+            "feels like": weather.current_forecast.feels_like,
+            "humidity": weather.current_forecast.humidity,
+            "uvi": weather.current_forecast.uvi,
+            "conditions": weather.current_forecast.conditions,
+            "icon": weather.current_forecast.icon
           },
           "daily_weather": weather.five_day_forecast.map do |day|
             {
