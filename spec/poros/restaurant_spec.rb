@@ -8,8 +8,7 @@ RSpec.describe Restaurant do
     data = json[:businesses][0]
     restaurant = Restaurant.new(data)
     expect(restaurant).to be_an_instance_of(Restaurant)
-    expect(restaurant.name).to eq(json[:businesses][0][:name])
-    expect(restaurant.address).to eq(data[:location][:display_address].join(", "))
-
+    expect(restaurant.name).to eq("Wonderful Bistro")
+    expect(restaurant.address).to eq("4602 N Elizabeth St, Ste 120, Pueblo, CO 81008")
   end
 end
