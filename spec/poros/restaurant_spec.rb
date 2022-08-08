@@ -7,9 +7,9 @@ RSpec.describe Restaurant do
     json = YelpService.get_restaurant(location, category)
     data = json[:businesses][0]
     restaurant = Restaurant.new(data)
-
     expect(restaurant).to be_an_instance_of(Restaurant)
     expect(restaurant.name).to eq(json[:businesses][0][:name])
-    expect(restaurant.address).to eq(json[:businesses][0][:location][:display_address])
+    expect(restaurant.address).to eq("#{data[:location][:address1]}, #{data[:location][:city]}, #{data[:location][:state]} #{data[:location][:zip_code]}")
+
   end
 end

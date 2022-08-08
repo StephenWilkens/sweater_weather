@@ -4,6 +4,6 @@ class Restaurant
 
   def initialize(data)
     @name = data[:name]
-    @address = data[:location][:display_address]
+    @address = "#{data[:location][:address1]}, #{data[:location][:city]}, #{data[:location][:state]} #{data[:location][:zip_code]}"
   end
 end

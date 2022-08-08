@@ -9,4 +9,7 @@ RSpec.describe YelpFacade do
 
       expect(restaurant).to be_a(Restaurant)
       expect(restaurant.name).to eq("Fortune Wok to Table")
-      expect(restaurant.address).to eq('"2817 E 3rd Ave", "Denver, CO 80206"')
+      expect(restaurant.address).to eq("2817 E 3rd Ave, Denver, CO 80206")
+    end
+  end
+end
