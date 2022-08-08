@@ -6,8 +6,6 @@ RSpec.describe YelpService do
       location = 'Denver, CO'
       category = 'Chinese'
       response = YelpService.get_restaurant(location, category)
-      require "pry"; binding.pry
-      restaurant = response[:businesses][0]
 
       expect(response).to be_a(Hash)
       expect(response[:businesses]).to be_a(Array)
