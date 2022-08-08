@@ -1,0 +1,285 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.yelp.com/v3/businesses/search?category=Chinese&location=Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.4.0
+      Authorization:
+      - Bearer Rq0L_iTwEB5ND0or9fv5v_tqCjZWBrL5JCxqtdqBTpZmP845Irup4xzA4EMqRjcWYWGE2c8TlarqiXDC7W_cgtRu2gWXoAA0Tm51ZDz7O4leNCkbpv2dP3q3CiXxYnYx
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - keep-alive
+      Content-Type:
+      - application/json
+      Ratelimit-Remaining:
+      - '4999'
+      Ratelimit-Resettime:
+      - '2022-08-09T00:00:00+00:00'
+      Ratelimit-Dailylimit:
+      - '5000'
+      Server:
+      - envoy
+      X-B3-Sampled:
+      - '0'
+      X-Zipkin-Id:
+      - 881e004f7c455d8c
+      X-Routing-Service:
+      - routing-main--uswest2-5569564ccc-5tq46; site=public_api_v3
+      X-Cloudmap:
+      - routing_uswest2
+      X-Mode:
+      - ro
+      X-Proxied:
+      - 10-69-152-12-uswest2bprod
+      X-Extlb:
+      - 10-69-152-12-uswest2bprod
+      Cache-Control:
+      - max-age=0, no-store, private, no-transform
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Mon, 08 Aug 2022 15:41:39 GMT
+      Via:
+      - 1.1 varnish
+      X-Served-By:
+      - cache-den8223-DEN
+      X-Cache:
+      - MISS
+      X-Cache-Hits:
+      - '0'
+      Vary:
+      - Accept-Encoding
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: ASCII-8BIT
+      string: '{"businesses": [{"id": "gagUrh3806qc5hZ14F0Odw", "alias": "denver-biscuit-denver-13",
+        "name": "Denver Biscuit", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/bxPN9shgJEtwvT3Hrf_pCg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/denver-biscuit-denver-13?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 4244, "categories": [{"alias": "sandwiches", "title": "Sandwiches"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}], "rating": 4.5,
+        "coordinates": {"latitude": 39.740384, "longitude": -104.949098}, "transactions":
+        ["pickup", "delivery"], "price": "$$", "location": {"address1": "3237 E Colfax
+        Ave", "address2": "", "address3": null, "city": "Denver", "zip_code": "80206",
+        "country": "US", "state": "CO", "display_address": ["3237 E Colfax Ave", "Denver,
+        CO 80206"]}, "phone": "+13033777900", "display_phone": "(303) 377-7900", "distance":
+        1887.2489668123706}, {"id": "dnJvyhSPiIVlmpdM_3SCrg", "alias": "snooze-an-a-m-eatery-denver-12",
+        "name": "Snooze, an A.M. Eatery", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/cniSi66T4iS6nqCdML6HUQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/snooze-an-a-m-eatery-denver-12?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 4639, "categories": [{"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}, {"alias": "cocktailbars", "title": "Cocktail Bars"},
+        {"alias": "tradamerican", "title": "American (Traditional)"}], "rating": 4.5,
+        "coordinates": {"latitude": 39.75544, "longitude": -104.98883}, "transactions":
+        ["delivery"], "price": "$$", "location": {"address1": "2262 Larimer St", "address2":
+        "", "address3": "", "city": "Denver", "zip_code": "80205", "country": "US",
+        "state": "CO", "display_address": ["2262 Larimer St", "Denver, CO 80205"]},
+        "phone": "+13032970700", "display_phone": "(303) 297-0700", "distance": 2719.2916625816497},
+        {"id": "LX8nS1dlW7MEZDDEmVcyGw", "alias": "root-down-denver", "name": "Root
+        Down", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/3pdxKRvI6U5DjE9hEnkAXQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/root-down-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 3620, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "vegan", "title": "Vegan"}, {"alias": "vegetarian", "title":
+        "Vegetarian"}], "rating": 4.5, "coordinates": {"latitude": 39.76306, "longitude":
+        -105.0056}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "1600 W 33rd Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80211", "country": "US", "state": "CO", "display_address": ["1600 W 33rd
+        Ave", "Denver, CO 80211"]}, "phone": "+13039934200", "display_phone": "(303)
+        993-4200", "distance": 4303.986533452191}, {"id": "LXlVCu6G-buaxC8GlDjmLA",
+        "alias": "little-man-ice-cream-denver", "name": "Little Man Ice Cream", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/l-M20bGgjw8seXNoAGO9QA/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/little-man-ice-cream-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 2556, "categories": [{"alias": "icecream", "title": "Ice Cream
+        & Frozen Yogurt"}], "rating": 4.5, "coordinates": {"latitude": 39.7594548,
+        "longitude": -105.01108}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "2620 16th St", "address2": "", "address3": "", "city": "Denver",
+        "zip_code": "80211", "country": "US", "state": "CO", "display_address": ["2620
+        16th St", "Denver, CO 80211"]}, "phone": "+13034553811", "display_phone":
+        "(303) 455-3811", "distance": 4389.610584864904}, {"id": "ywFvkNZVJoXUQbZoq7fr1w",
+        "alias": "rioja-denver", "name": "Rioja", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/lUl5MQmamMtenen2S9IR2Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/rioja-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 2508, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "spanish", "title": "Spanish"}, {"alias": "bars", "title":
+        "Bars"}], "rating": 4.5, "coordinates": {"latitude": 39.7478083125095, "longitude":
+        -104.999331349925}, "transactions": ["pickup", "delivery"], "price": "$$$",
+        "location": {"address1": "1431 Larimer St", "address2": "", "address3": "",
+        "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO", "display_address":
+        ["1431 Larimer St", "Denver, CO 80202"]}, "phone": "+13038202282", "display_phone":
+        "(303) 820-2282", "distance": 2855.2299693634436}, {"id": "Z8vO_mf1V09QDUPdyqJ6og",
+        "alias": "linger-denver-2", "name": "Linger", "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/G1cBlQ3BkydV0kYFH8JpsQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/linger-denver-2?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 3715, "categories": [{"alias": "asianfusion", "title": "Asian
+        Fusion"}, {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias":
+        "bars", "title": "Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.75954,
+        "longitude": -105.01139}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "2030 W 30th Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80211", "country": "US", "state": "CO",
+        "display_address": ["2030 W 30th Ave", "Denver, CO 80211"]}, "phone": "+13039933120",
+        "display_phone": "(303) 993-3120", "distance": 4415.644036309332}, {"id":
+        "svJWwW0ilssyqk_UML0mUg", "alias": "work-and-class-denver", "name": "Work
+        & Class", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/CsEm4HlzDoXK_n3ZWcxv8g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/work-and-class-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 1600, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "latin", "title": "Latin American"}, {"alias": "cocktailbars",
+        "title": "Cocktail Bars"}], "rating": 4.5, "coordinates": {"latitude": 39.75761,
+        "longitude": -104.98604}, "transactions": ["delivery"], "price": "$$", "location":
+        {"address1": "2500 Larimer St", "address2": "Ste 101", "address3": "", "city":
+        "Denver", "zip_code": "80205", "country": "US", "state": "CO", "display_address":
+        ["2500 Larimer St", "Ste 101", "Denver, CO 80205"]}, "phone": "+13032920700",
+        "display_phone": "(303) 292-0700", "distance": 2810.0960698608437}, {"id":
+        "EjNI-dNAMrYxKgUIkqeqhg", "alias": "guard-and-grace-denver", "name": "Guard
+        and Grace", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/5T5K37nOTzzQVOIU_jvvcw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/guard-and-grace-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 1407, "categories": [{"alias": "steak", "title": "Steakhouses"},
+        {"alias": "wine_bars", "title": "Wine Bars"}, {"alias": "seafood", "title":
+        "Seafood"}], "rating": 4.5, "coordinates": {"latitude": 39.7476811908831,
+        "longitude": -104.989654496312}, "transactions": ["pickup", "delivery"], "price":
+        "$$$", "location": {"address1": "1801 California St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["1801 California St", "Denver, CO 80202"]}, "phone": "+13032938500",
+        "display_phone": "(303) 293-8500", "distance": 2140.4033736245196}, {"id":
+        "8lKL5Bxt620aqh0ulDByIg", "alias": "sushi-den-denver", "name": "Sushi Den",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/7A-JuUmtjJ3VgFy9DbHv_g/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/sushi-den-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 2092, "categories": [{"alias": "japanese", "title": "Japanese"},
+        {"alias": "sushi", "title": "Sushi Bars"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.68962, "longitude": -104.980763},
+        "transactions": [], "price": "$$$", "location": {"address1": "1487 S Pearl
+        St", "address2": "", "address3": "", "city": "Denver", "zip_code": "80210",
+        "country": "US", "state": "CO", "display_address": ["1487 S Pearl St", "Denver,
+        CO 80210"]}, "phone": "+13037770826", "display_phone": "(303) 777-0826", "distance":
+        5182.987196490936}, {"id": "i8VF3q7dTszCcigJSMcJzQ", "alias": "angelo-s-taverna-denver",
+        "name": "Angelo\u2019s Taverna", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nrWS_kPhlGofYXQaiHE8Jg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/angelo-s-taverna-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 1402, "categories": [{"alias": "italian", "title": "Italian"},
+        {"alias": "seafood", "title": "Seafood"}, {"alias": "bars", "title": "Bars"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.725523, "longitude": -104.979224},
+        "transactions": ["restaurant_reservation", "pickup", "delivery"], "price":
+        "$$", "location": {"address1": "620 E 6th Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["620 E 6th Ave", "Denver, CO 80203"]}, "phone": "+13037443366",
+        "display_phone": "(303) 744-3366", "distance": 1351.3929919123793}, {"id":
+        "CQNv4SXqFltcwNsx-qHbLQ", "alias": "steubens-uptown-denver", "name": "Steuben''s
+        Uptown", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/KR5Wy_fMXkSXyTkLVMWmig/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/steubens-uptown-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 3038, "categories": [{"alias": "diners", "title": "Diners"},
+        {"alias": "breakfast_brunch", "title": "Breakfast & Brunch"}, {"alias": "cocktailbars",
+        "title": "Cocktail Bars"}], "rating": 4.0, "coordinates": {"latitude": 39.74349,
+        "longitude": -104.98017}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "523 E 17th Ave", "address2": null, "address3":
+        "", "city": "Denver", "zip_code": "80203", "country": "US", "state": "CO",
+        "display_address": ["523 E 17th Ave", "Denver, CO 80203"]}, "phone": "+13038301001",
+        "display_phone": "(303) 830-1001", "distance": 1248.9218976439815}, {"id":
+        "mZkbX-naLZCKEO19cUmYQg", "alias": "snooze-an-a-m-eatery-denver-5", "name":
+        "Snooze, an A.M. Eatery", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/q7cgJ5yVUt1b90ynWnGdSw/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/snooze-an-a-m-eatery-denver-5?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 1960, "categories": [{"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}, {"alias": "tradamerican", "title": "American (Traditional)"},
+        {"alias": "cocktailbars", "title": "Cocktail Bars"}], "rating": 4.0, "coordinates":
+        {"latitude": 39.7275615225745, "longitude": -104.940446262566}, "transactions":
+        ["delivery"], "price": "$$", "location": {"address1": "700 N Colorado Blvd",
+        "address2": "Ste A", "address3": "", "city": "Denver", "zip_code": "80206",
+        "country": "US", "state": "CO", "display_address": ["700 N Colorado Blvd",
+        "Ste A", "Denver, CO 80206"]}, "phone": "+13037366200", "display_phone": "(303)
+        736-6200", "distance": 2697.6834011658766}, {"id": "3ncWfQJg_RbTqnkPmksoAA",
+        "alias": "sams-no-3-downtown-denver", "name": "Sam''s No 3 - Downtown", "image_url":
+        "https://s3-media1.fl.yelpcdn.com/bphoto/slPJBqg4pmG5j_1lW8hQ8w/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/sams-no-3-downtown-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 2429, "categories": [{"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}, {"alias": "tradamerican", "title": "American (Traditional)"}],
+        "rating": 4.0, "coordinates": {"latitude": 39.7462, "longitude": -104.99559},
+        "transactions": ["delivery"], "price": "$$", "location": {"address1": "1500
+        Curtis St", "address2": null, "address3": "", "city": "Denver", "zip_code":
+        "80202", "country": "US", "state": "CO", "display_address": ["1500 Curtis
+        St", "Denver, CO 80202"]}, "phone": "+13035341927", "display_phone": "(303)
+        534-1927", "distance": 2470.3947699615514}, {"id": "Kjmtip2htzyZNjXbegxfYg",
+        "alias": "chop-shop-casual-urban-eatery-colfax-denver-7", "name": "Chop Shop
+        Casual Urban Eatery Colfax", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/e7Ml67c1Pa8LDEn2tt6miQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/chop-shop-casual-urban-eatery-colfax-denver-7?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 1152, "categories": [{"alias": "newamerican", "title": "American
+        (New)"}, {"alias": "burgers", "title": "Burgers"}, {"alias": "salad", "title":
+        "Salad"}], "rating": 4.5, "coordinates": {"latitude": 39.73987, "longitude":
+        -104.92935}, "transactions": ["pickup", "delivery"], "price": "$$", "location":
+        {"address1": "4990 E Colfax Ave", "address2": "", "address3": "", "city":
+        "Denver", "zip_code": "80220", "country": "US", "state": "CO", "display_address":
+        ["4990 E Colfax Ave", "Denver, CO 80220"]}, "phone": "+17205507665", "display_phone":
+        "(720) 550-7665", "distance": 3528.450616806395}, {"id": "JJiugrBcZrNpX0ueUBuvrg",
+        "alias": "cherry-cricket-denver-3", "name": "Cherry Cricket", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/hirnXSb1GZf0oXR_YBg6Vg/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/cherry-cricket-denver-3?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 2833, "categories": [{"alias": "burgers", "title": "Burgers"},
+        {"alias": "sportsbars", "title": "Sports Bars"}, {"alias": "newamerican",
+        "title": "American (New)"}], "rating": 4.0, "coordinates": {"latitude": 39.7196942925966,
+        "longitude": -104.956333474869}, "transactions": ["pickup", "delivery"], "price":
+        "$$", "location": {"address1": "2641 E 2nd Ave", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80206", "country": "US", "state": "CO",
+        "display_address": ["2641 E 2nd Ave", "Denver, CO 80206"]}, "phone": "+13033227666",
+        "display_phone": "(303) 322-7666", "distance": 2124.565769374474}, {"id":
+        "RoaIS3cE1wDtzuZ5XrRgjw", "alias": "biker-jims-gourmet-dogs-denver-9", "name":
+        "Biker Jim''s Gourmet Dogs", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/itPQNSDSpWmFhMVxprK6hQ/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/biker-jims-gourmet-dogs-denver-9?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 1380, "categories": [{"alias": "hotdog", "title": "Hot Dogs"}],
+        "rating": 4.5, "coordinates": {"latitude": 39.754394, "longitude": -104.990215},
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
+        "2148 Larimer St", "address2": "", "address3": null, "city": "Denver", "zip_code":
+        "80205", "country": "US", "state": "CO", "display_address": ["2148 Larimer
+        St", "Denver, CO 80205"]}, "phone": "+17207469355", "display_phone": "(720)
+        746-9355", "distance": 2705.105038941835}, {"id": "5R0BZNk2MuGd8fzDcp_DVQ",
+        "alias": "watercourse-foods-denver", "name": "WaterCourse Foods", "image_url":
+        "https://s3-media4.fl.yelpcdn.com/bphoto/yWLZa79N7rsZWH80DkeE8g/o.jpg", "is_closed":
+        false, "url": "https://www.yelp.com/biz/watercourse-foods-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 2299, "categories": [{"alias": "vegetarian", "title": "Vegetarian"},
+        {"alias": "vegan", "title": "Vegan"}, {"alias": "comfortfood", "title": "Comfort
+        Food"}], "rating": 4.0, "coordinates": {"latitude": 39.743566, "longitude":
+        -104.976669}, "transactions": ["delivery"], "price": "$$", "location": {"address1":
+        "837 E 17th Ave", "address2": "", "address3": "", "city": "Denver", "zip_code":
+        "80218", "country": "US", "state": "CO", "display_address": ["837 E 17th Ave",
+        "Denver, CO 80218"]}, "phone": "+13038327313", "display_phone": "(303) 832-7313",
+        "distance": 1049.416973999978}, {"id": "LRyRNUWVSZ8NXPuCzTrfpA", "alias":
+        "union-lodge-no-1-denver", "name": "Union Lodge No.1", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/oQcctWaIVGkoE1pKGlHA6Q/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/union-lodge-no-1-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 615, "categories": [{"alias": "cocktailbars", "title": "Cocktail
+        Bars"}, {"alias": "lounges", "title": "Lounges"}], "rating": 5.0, "coordinates":
+        {"latitude": 39.746295, "longitude": -104.994652}, "transactions": [], "price":
+        "$$", "location": {"address1": "1543 Champa St", "address2": "", "address3":
+        "", "city": "Denver", "zip_code": "80202", "country": "US", "state": "CO",
+        "display_address": ["1543 Champa St", "Denver, CO 80202"]}, "phone": "+17203890447",
+        "display_phone": "(720) 389-0447", "distance": 2413.638465744777}, {"id":
+        "IvPkDs4T8mEH7XzFxMuVGQ", "alias": "city-o-city-denver", "name": "City O''
+        City", "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/5MN5hW_2Of8qW-7YJs3SsA/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/city-o-city-denver?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 2425, "categories": [{"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}, {"alias": "vegan", "title": "Vegan"}, {"alias": "tradamerican",
+        "title": "American (Traditional)"}], "rating": 4.0, "coordinates": {"latitude":
+        39.7367226482267, "longitude": -104.984684393258}, "transactions": ["delivery"],
+        "price": "$$", "location": {"address1": "206 E 13th Ave", "address2": "",
+        "address3": "", "city": "Denver", "zip_code": "80203", "country": "US", "state":
+        "CO", "display_address": ["206 E 13th Ave", "Denver, CO 80203"]}, "phone":
+        "+13038316443", "display_phone": "(303) 831-6443", "distance": 1241.8297230259518},
+        {"id": "hWdupym3JerJ2p_-wRj00A", "alias": "snooze-an-a-m-eatery-denver-11",
+        "name": "Snooze, an A.M. Eatery", "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/MN5BVvR-JidJIBRTX6zWAg/o.jpg",
+        "is_closed": false, "url": "https://www.yelp.com/biz/snooze-an-a-m-eatery-denver-11?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
+        "review_count": 1325, "categories": [{"alias": "breakfast_brunch", "title":
+        "Breakfast & Brunch"}, {"alias": "tradamerican", "title": "American (Traditional)"},
+        {"alias": "cocktailbars", "title": "Cocktail Bars"}], "rating": 4.5, "coordinates":
+        {"latitude": 39.7534172798151, "longitude": -104.999892472353}, "transactions":
+        ["delivery"], "price": "$$", "location": {"address1": "1701 Wynkoop St", "address2":
+        "Ste 150", "address3": "", "city": "Denver", "zip_code": "80202", "country":
+        "US", "state": "CO", "display_address": ["1701 Wynkoop St", "Ste 150", "Denver,
+        CO 80202"]}, "phone": "+13038253536", "display_phone": "(303) 825-3536", "distance":
+        3222.3649931697933}], "total": 4500, "region": {"center": {"longitude": -104.97024536132812,
+        "latitude": 39.73552421220229}}}'
+  recorded_at: Mon, 08 Aug 2022 15:41:39 GMT
+recorded_with: VCR 6.1.0
