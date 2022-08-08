@@ -3,7 +3,7 @@ class WeatherSerializer
   def self.new(weather)
     {
       "data": {
-        "id": null,
+        "id": nil,
         "type": "forecast",
         "attributes": {
           "current_weather": {
@@ -11,7 +11,7 @@ class WeatherSerializer
             "sunrise": weather.current_forecast.sunrise,
             "sunset": weather.current_forecast.sunset,
             "temperature": weather.current_forecast.temperature,
-            "feels like": weather.current_forecast.feels_like,
+            "feels_like": weather.current_forecast.feels_like,
             "humidity": weather.current_forecast.humidity,
             "uvi": weather.current_forecast.uvi,
             "conditions": weather.current_forecast.conditions,
@@ -22,8 +22,8 @@ class WeatherSerializer
               "date": day.date,
               "sunrise": day.sunrise,
               "sunset": day.sunset,
-              "max temp": day.max_temp,
-              "min temp": day.min_temp,
+              "max_temp": day.max_temp,
+              "min_temp": day.min_temp,
               "conditions": day.conditions,
               "icon": day.icon
             }
