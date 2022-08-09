@@ -24,38 +24,38 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Ratelimit-Resettime:
-      - '2022-08-09T00:00:00+00:00'
-      Server:
-      - envoy
-      X-Routing-Service:
-      - routing-main--uswest2-7dddbc7674-rlphf; site=public_api_v3
-      X-Zipkin-Id:
-      - 87fcefed22c1905d
-      Ratelimit-Dailylimit:
-      - '5000'
       X-B3-Sampled:
       - '0'
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
       Ratelimit-Remaining:
-      - '4990'
+      - '4999'
+      X-Zipkin-Id:
+      - 6e5d18a722a0bf4a
+      X-Routing-Service:
+      - routing-main--uswest2-77d4785ff7-rfdjp; site=public_api_v3
+      Ratelimit-Resettime:
+      - '2022-08-10T00:00:00+00:00'
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
       - ro
       X-Proxied:
-      - 10-69-112-70-uswest2aprod
+      - 10-69-126-17-uswest2aprod
       X-Extlb:
-      - 10-69-112-70-uswest2aprod
+      - 10-69-126-17-uswest2aprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 08 Aug 2022 17:13:31 GMT
+      - Tue, 09 Aug 2022 20:38:46 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8276-DEN
+      - cache-den8278-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -69,7 +69,7 @@ http_interactions:
       string: '{"businesses": [{"id": "kQxM1xlaZfQmXpKaqMTNnw", "alias": "wonderful-bistro-pueblo",
         "name": "Wonderful Bistro", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HqKiK_Ju61fC4nSFq_fgHg/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/wonderful-bistro-pueblo?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
-        "review_count": 81, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "review_count": 80, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 4.0, "coordinates": {"latitude": 38.319366, "longitude": -104.616623},
         "transactions": ["delivery"], "price": "$$", "location": {"address1": "4602
         N Elizabeth St", "address2": "Ste 120", "address3": "", "city": "Pueblo",
@@ -117,7 +117,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/tea-palace-ii-pueblo?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
         "review_count": 18, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 3.5, "coordinates": {"latitude": 38.267707824707, "longitude": -104.62508392334},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "1212 W 4th St", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
         "81004", "country": "US", "state": "CO", "display_address": ["1212 W 4th St",
         "Pueblo, CO 81004"]}, "phone": "+17195460099", "display_phone": "(719) 546-0099",
@@ -127,7 +127,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/tian-jin-oriental-cuisine-pueblo-2?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
         "review_count": 24, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 3.5, "coordinates": {"latitude": 38.243054, "longitude": -104.649384},
-        "transactions": ["delivery", "pickup"], "price": "$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$", "location": {"address1":
         "3400 W Northern Ave", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
         "81005", "country": "US", "state": "CO", "display_address": ["3400 W Northern
         Ave", "Pueblo, CO 81005"]}, "phone": "+17195600903", "display_phone": "(719)
@@ -147,7 +147,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/canton-house-pueblo?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
         "review_count": 15, "categories": [{"alias": "cantonese", "title": "Cantonese"}],
         "rating": 3.5, "coordinates": {"latitude": 38.310926, "longitude": -104.628937},
-        "transactions": ["delivery", "pickup"], "price": "$$", "location": {"address1":
+        "transactions": ["pickup", "delivery"], "price": "$$", "location": {"address1":
         "1617 W US Hwy 50", "address2": "", "address3": "", "city": "Pueblo", "zip_code":
         "81008", "country": "US", "state": "CO", "display_address": ["1617 W US Hwy
         50", "Pueblo, CO 81008"]}, "phone": "+17195454141", "display_phone": "(719)
@@ -174,8 +174,8 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/panda-express-pueblo?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
         "review_count": 32, "categories": [{"alias": "chinese", "title": "Chinese"},
         {"alias": "hotdogs", "title": "Fast Food"}], "rating": 2.0, "coordinates":
-        {"latitude": 38.2325574, "longitude": -104.6628568}, "transactions": ["delivery",
-        "pickup"], "price": "$$", "location": {"address1": "2001 S. Pueblo Blvd.",
+        {"latitude": 38.2325574, "longitude": -104.6628568}, "transactions": ["pickup",
+        "delivery"], "price": "$$", "location": {"address1": "2001 S. Pueblo Blvd.",
         "address2": "", "address3": "", "city": "Pueblo", "zip_code": "81005", "country":
         "US", "state": "CO", "display_address": ["2001 S. Pueblo Blvd.", "Pueblo,
         CO 81005"]}, "phone": "+17195649000", "display_phone": "(719) 564-9000", "distance":
@@ -184,7 +184,7 @@ http_interactions:
         "is_closed": false, "url": "https://www.yelp.com/biz/pueblo-dragon-2-pueblo?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
         "review_count": 10, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 2.5, "coordinates": {"latitude": 38.24486, "longitude": -104.5646},
-        "transactions": ["delivery", "pickup"], "location": {"address1": "2648 Santa
+        "transactions": ["pickup", "delivery"], "location": {"address1": "2648 Santa
         Fe Dr", "address2": "Ste 9", "address3": null, "city": "Pueblo", "zip_code":
         "81006", "country": "US", "state": "CO", "display_address": ["2648 Santa Fe
         Dr", "Ste 9", "Pueblo, CO 81006"]}, "phone": "+17195443008", "display_phone":
@@ -207,5 +207,5 @@ http_interactions:
         CO 81003"]}, "phone": "+17192531985", "display_phone": "(719) 253-1985", "distance":
         3260.634561047277}], "total": 15, "region": {"center": {"longitude": -104.5733642578125,
         "latitude": 38.27035217485165}}}'
-  recorded_at: Mon, 08 Aug 2022 17:13:31 GMT
+  recorded_at: Tue, 09 Aug 2022 20:38:45 GMT
 recorded_with: VCR 6.1.0

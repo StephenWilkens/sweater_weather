@@ -16,4 +16,8 @@ class Weather
   def eight_hour_forecast
     @hourly_weather[0..7].map { |hour| HourlyWeather.new(hour) }
   end
+
+  def weather_at_eta(eta)
+    HourlyWeather.new(@hourly_weather[eta])
+  end
 end

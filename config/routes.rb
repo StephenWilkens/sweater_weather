@@ -5,6 +5,7 @@ Rails.application.routes.draw do
       get '/munchies', to: 'restaurants#show'
       post '/users', to: 'users#create'
       post '/sessions', to: 'users#show'
+      post '/road_trip', to: 'road_trips#show'
     end
   end
 end
