@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Road Trips show action' do
+RSpec.describe 'Road Trips create action' do
   describe 'happy path' do
     it 'returns start city, end city, travel time, destination weather at eta(temp & conditions)', :vcr do
       bob = User.create!(email: "bob@gmail.com", password: "abc123", password_confirmation: "abc123")

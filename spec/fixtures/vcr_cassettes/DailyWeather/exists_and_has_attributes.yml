@@ -21,7 +21,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 09 Aug 2022 23:54:21 GMT
+      - Tue, 09 Aug 2022 23:56:30 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -38,7 +38,7 @@ http_interactions:
       - GET, POST
     body:
       encoding: UTF-8
-      string: '{"lat":39.7392,"lon":104.9903,"timezone":"Asia/Shanghai","timezone_offset":28800,"current":{"dt":1660089260,"sunrise":1660082818,"sunset":1660133044,"temp":67.06,"feels_like":67.28,"pressure":1005,"humidity":81,"dew_point":61.05,"uvi":0.11,"clouds":99,"visibility":10000,"wind_speed":7.92,"wind_deg":71,"wind_gust":10.83,"weather":[{"id":804,"main":"Clouds","description":"overcast
+      string: '{"lat":39.7392,"lon":104.9903,"timezone":"Asia/Shanghai","timezone_offset":28800,"current":{"dt":1660089390,"sunrise":1660082818,"sunset":1660133044,"temp":67.06,"feels_like":67.28,"pressure":1005,"humidity":81,"dew_point":61.05,"uvi":0.11,"clouds":99,"visibility":10000,"wind_speed":7.92,"wind_deg":71,"wind_gust":10.83,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}]},"hourly":[{"dt":1660086000,"temp":67.03,"feels_like":67.19,"pressure":1005,"humidity":80,"dew_point":60.66,"uvi":0.02,"clouds":99,"visibility":10000,"wind_speed":7.94,"wind_deg":68,"wind_gust":11.65,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"pop":0.33,"rain":{"1h":0.41}},{"dt":1660089600,"temp":67.06,"feels_like":67.28,"pressure":1005,"humidity":81,"dew_point":61.05,"uvi":0.11,"clouds":99,"visibility":10000,"wind_speed":7.92,"wind_deg":71,"wind_gust":10.83,"weather":[{"id":804,"main":"Clouds","description":"overcast
         clouds","icon":"04d"}],"pop":0.37},{"dt":1660093200,"temp":67.46,"feels_like":67.66,"pressure":1005,"humidity":80,"dew_point":61.09,"uvi":1.39,"clouds":98,"visibility":10000,"wind_speed":8.63,"wind_deg":70,"wind_gust":9.95,"weather":[{"id":804,"main":"Clouds","description":"overcast
@@ -96,5 +96,5 @@ http_interactions:
         clouds","icon":"02d"}],"clouds":12,"pop":0,"uvi":10},{"dt":1660626000,"sunrise":1660601562,"sunset":1660650984,"moonrise":1660659960,"moonset":1660617720,"moon_phase":0.65,"temp":{"day":87.12,"min":70.45,"max":87.12,"night":80.02,"eve":83.8,"morn":71.56},"feels_like":{"day":84.42,"night":80.46,"eve":82.67,"morn":70.3},"pressure":1001,"humidity":27,"dew_point":49.24,"wind_speed":20.76,"wind_deg":65,"wind_gust":31.41,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"clouds":87,"pop":0.33,"rain":0.13,"uvi":10},{"dt":1660712400,"sunrise":1660688019,"sunset":1660737303,"moonrise":1660747920,"moonset":1660708140,"moon_phase":0.68,"temp":{"day":87.75,"min":73.22,"max":89.62,"night":82.08,"eve":85.08,"morn":76.37},"feels_like":{"day":88.11,"night":84,"eve":85.86,"morn":76.71},"pressure":997,"humidity":42,"dew_point":62.02,"wind_speed":15.3,"wind_deg":77,"wind_gust":16.78,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"clouds":21,"pop":0.41,"rain":0.84,"uvi":10}]}'
-  recorded_at: Tue, 09 Aug 2022 23:54:21 GMT
+  recorded_at: Tue, 09 Aug 2022 23:56:30 GMT
 recorded_with: VCR 6.1.0
