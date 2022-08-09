@@ -11,6 +11,16 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
+  def show
+    user = User.find_by(email: params[:email])
+    if user && user.authenticate(params[:password])
+      render json: UserSerializer.new(user), status: 200
+    else
+      render json: { error: 'Incorrect log-in information' }, status: :bad_request
+    end
+  end
+
+
   private
 
   def user_params
