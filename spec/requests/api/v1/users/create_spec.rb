@@ -26,4 +26,44 @@ RSpec.describe 'Users Create Action' do
       expect(rb[:data][:attributes]).to_not have_key(:password_digest)
     end
   end
+
+  describe 'sad path' do
+    it 'will not create a user with mismatched passwords' do
+      body = {
+               "email": "bob@gmail.com",
+               "password": "abc123",
+               "password_confirmation": "bbb123"
+             }
+      headers = { 'CONTENT_TYPE' => 'application/json', 'Accept' => 'application/json' }
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(body)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(422)
+    end
+    it 'will not create a user with an already used email' do
+      body = {
+               "email": "bob@gmail.com",
+               "password": "abc123",
+               "password_confirmation": "abc123"
+             }
+      headers = { 'CONTENT_TYPE' => 'application/json', 'Accept' => 'application/json' }
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(body)
+
+      expect(response).to be_successful
+      
+      body = {
+               "email": "bob@gmail.com",
+               "password": "abc123",
+               "password_confirmation": "abc123"
+             }
+      headers = { 'CONTENT_TYPE' => 'application/json', 'Accept' => 'application/json' }
+
+      post '/api/v1/users', headers: headers, params: JSON.generate(body)
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(422)
+    end
+  end
 end
