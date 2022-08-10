@@ -6,7 +6,11 @@ class Api::V1::RoadTripsController < ApplicationController
     route = RouteFacade.route_info(params[:origin], params[:destination])
 
     if user
-      render json: RouteSerializer.new(route, weather)
+      if route
+        render json: RouteSerializer.new(route, weather)
+      else
+        render json: ImpossibleRouteSerializer.new(params[:origin], params[:destination])
+      end
     else
       render json: { error: 'Invalid key' }, status: :unauthorized
     end
