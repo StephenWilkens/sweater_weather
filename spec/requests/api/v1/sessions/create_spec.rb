@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe 'Users show Action' do
+RSpec.describe 'Sessions create Action' do
   describe 'happy path' do
     it 'finds a user and issues a response' do
 

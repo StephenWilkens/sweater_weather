@@ -24,38 +24,38 @@ http_interactions:
       - keep-alive
       Content-Type:
       - application/json
-      Ratelimit-Resettime:
-      - '2022-08-09T00:00:00+00:00'
-      Server:
-      - envoy
-      X-Routing-Service:
-      - routing-main--uswest2-7dddbc7674-rlphf; site=public_api_v3
-      X-Zipkin-Id:
-      - 87fcefed22c1905d
-      Ratelimit-Dailylimit:
-      - '5000'
       X-B3-Sampled:
       - '0'
+      Server:
+      - envoy
+      Ratelimit-Dailylimit:
+      - '5000'
+      X-Routing-Service:
+      - routing-main--uswest2-77d4785ff7-w55sm; site=public_api_v3
       Ratelimit-Remaining:
-      - '4990'
+      - '4991'
+      X-Zipkin-Id:
+      - 5448ed1c1a0f26e5
+      Ratelimit-Resettime:
+      - '2022-08-10T00:00:00+00:00'
       X-Cloudmap:
       - routing_uswest2
       X-Mode:
       - ro
       X-Proxied:
-      - 10-69-112-70-uswest2aprod
+      - 10-69-185-39-uswest2bprod
       X-Extlb:
-      - 10-69-112-70-uswest2aprod
+      - 10-69-185-39-uswest2bprod
       Cache-Control:
       - max-age=0, no-store, private, no-transform
       Accept-Ranges:
       - bytes
       Date:
-      - Mon, 08 Aug 2022 17:13:31 GMT
+      - Tue, 09 Aug 2022 23:56:32 GMT
       Via:
       - 1.1 varnish
       X-Served-By:
-      - cache-den8276-DEN
+      - cache-den8242-DEN
       X-Cache:
       - MISS
       X-Cache-Hits:
@@ -69,7 +69,7 @@ http_interactions:
       string: '{"businesses": [{"id": "kQxM1xlaZfQmXpKaqMTNnw", "alias": "wonderful-bistro-pueblo",
         "name": "Wonderful Bistro", "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/HqKiK_Ju61fC4nSFq_fgHg/o.jpg",
         "is_closed": false, "url": "https://www.yelp.com/biz/wonderful-bistro-pueblo?adjust_creative=M3huB9jyN1kCamubGR7EpQ&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=M3huB9jyN1kCamubGR7EpQ",
-        "review_count": 81, "categories": [{"alias": "chinese", "title": "Chinese"}],
+        "review_count": 80, "categories": [{"alias": "chinese", "title": "Chinese"}],
         "rating": 4.0, "coordinates": {"latitude": 38.319366, "longitude": -104.616623},
         "transactions": ["delivery"], "price": "$$", "location": {"address1": "4602
         N Elizabeth St", "address2": "Ste 120", "address3": "", "city": "Pueblo",
@@ -207,5 +207,5 @@ http_interactions:
         CO 81003"]}, "phone": "+17192531985", "display_phone": "(719) 253-1985", "distance":
         3260.634561047277}], "total": 15, "region": {"center": {"longitude": -104.5733642578125,
         "latitude": 38.27035217485165}}}'
-  recorded_at: Mon, 08 Aug 2022 17:13:31 GMT
+  recorded_at: Tue, 09 Aug 2022 23:56:31 GMT
 recorded_with: VCR 6.1.0
